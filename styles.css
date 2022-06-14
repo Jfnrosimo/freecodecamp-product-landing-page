@@ -1,0 +1,154 @@
+body {
+    background: #e6ffe6;
+    margin: 0;
+    font-family: Garamond;
+    box-sizing: border-box;
+  }
+  
+header {
+    width: 100%;
+    height: auto;
+    background-color: #006600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    color: white;
+}
+  
+#header-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 150px;
+    margin-left: 10rem;
+}
+  
+.title-text {
+    padding-left: 0;
+}
+  
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+  
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: auto;
+    height: 100%;
+}
+  
+nav > ul > li {
+    color: white;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+    font-size: 1.2rem;
+}
+  
+nav > ul > li:hover {
+    background-color: #004d00;
+    border-radius: 0.2rem;
+}
+  
+li > a {
+    color: inherit;
+    text-decoration: 0;
+}
+  
+main {
+    padding-top: 12rem;
+}
+  
+#banner {
+    margin-left: 520px;
+  
+}
+  
+.banner-description {
+    font-size: 2rem;
+}
+
+form {
+    margin-left: 120px;
+}
+
+#banner p {
+    margin-left: -30px;
+}
+  
+section {
+    margin-bottom: 60px;
+    margin-left: 16rem;
+    text-align: left;
+}
+  
+.description {
+    font-size: 1.6rem;
+    display: block;
+}
+  
+section > ul > li {
+    display: block;
+}
+  
+#presentation {
+    margin-left: 500px;
+}
+  
+div {
+    margin: 0.5rem;
+    margin-right: 8rem;
+    margin-left: 0;
+}
+  
+.price {
+    border: 2px solid green;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 3fr;
+}
+  
+.headgear {
+    width: 100%;
+    height: auto;
+    background-color: #8cff1a;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0;
+}
+  
+.price-value {
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+footer {
+    text-align: center;
+}
+  
+.foot > ul > li {
+    display: block;
+    text-decoration: 0;
+}
+ 
+@media only screen and (max-width: 600px) {
+    #header-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 150px;
+    margin-left: 1rem;
+    }
+} 
+
+  
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
