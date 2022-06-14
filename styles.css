@@ -112,10 +112,16 @@ div {
     border-radius: 10px;
     margin: 0;
 }
-  
+
+.price > .product-img {
+    margin: auto;
+    margin-top: 20px;
+}
+
 .price-value {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
 }
   
 footer {
