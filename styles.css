@@ -1,19 +1,17 @@
+* {
+    outline: 1px solid grey;
+}
 body {
     background: #e6ffe6;
     margin: 0;
     font-family: Garamond;
     box-sizing: border-box;
+    
   }
   
 header {
-    width: 100%;
-    height: auto;
     background-color: #006600;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
     color: white;
 }
   
@@ -21,26 +19,22 @@ header {
     width: 90px;
     height: 90px;
     border-radius: 150px;
-    margin-left: 10rem;
+    
 }
-  
-.title-text {
-    padding-left: 0;
-}
+
   
 nav {
-    width: 50%;
     max-width: 300px;
     height: 50px;
 }
   
 nav > ul {
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-inline-start: 0;
     margin-block: auto;
-    height: 100%;
+    height: 100%; */
 }
   
 nav > ul > li {
@@ -61,10 +55,6 @@ li > a {
     text-decoration: 0;
 }
   
-main {
-    padding-top: 12rem;
-}
-  
 #banner {
     text-align: center;
   
@@ -74,27 +64,27 @@ main {
     font-size: 2rem;
 }
   
-#features {
-    margin: 100px 200px 100px;
-    
-}
-  
 .description {
     font-size: 2rem;
     display: block;
     font-weight: bold;
 }
+
+#features ul {
+    margin-left: 0;
+    padding-left: 0;
+}
   
 section > ul > li {
     display: block;
 }
-  
+
 #presentation {
-    margin: 100px 500px 100px;
+    margin-bottom: 30px;
 }
   
 div {
-    margin: 100px 200px 100px;
+    
 }
   
 .price {
@@ -126,25 +116,119 @@ div {
   
 footer {
     text-align: center;
+    margin-top: 100px;
+}
+
+footer ul {
+    margin-left: 0;
+    padding-left: 0;
 }
   
 .foot > ul > li {
     display: block;
     text-decoration: 0;
 }
- 
-@media only screen and (max-width: 600px) {
-    #header-img {
-    width: 90px;
-    height: 90px;
-    border-radius: 150px;
-    margin-left: 1rem;
+
+/* ------------ MOBILE ---------------*/
+@media only screen and (max-width: 480px) {
+    .sm-4{
+        width: 100%;
+    }
+    .sm-2 {
+        width: calc(2/4);
+    }
+    .centered {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    header {
+        height: 200px;
+    }
+    header h1 {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+    }
+    header nav ul {
+        text-align: center;
+    }
+    #video {
+        height: 250px;
+    }
+
+    footer p, footer ul {
+        font-size: 0.9rem;
+    }
+}
+/* ---------------- TABLET --------------- */
+@media only screen and (min-width: 481px) {
+    .md-4 {
+        width: 100%;
+    }
+    .md-2 {
+        width: calc(2/4);
+    }
+    header {
+        height: 200px;
+    }
+    header h1 {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+    }
+    nav ul {
+        margin: 0;
+        padding: auto;
+    }
+    .md-centered {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    header {
+        height: 130px;
+    }
+    #video {
+        height: 300px;
+    }
+}
+/* -------------- DESKTOP --------------- */
+@media only screen and (min-width: 1025px) {
+    .lg-4 {
+        width: 100%;
+    }
+    .lg-3 {
+        width: calc(3/4);
+    }
+    .lg-0 {
+        width: 0;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    nav {
+        margin-top: 10px;
+        margin-left: 30px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        right: -10%;
+        top: 10;
+    }
+    nav ul {
+        margin-top: 10px;
+    }
+    main #banner, main #features, main #presentation {
+        margin-bottom: 70px;
+    }
+    #video {
+        height: 500px;
+    }
+    .lg-centered {
+        margin-left: 15%;
+        margin-right: 15%;
     }
 } 
 
-  
-@media (prefers-reduced-motion: no-preference) {
-    * {
-      scroll-behavior: smooth;
-    }
-}
