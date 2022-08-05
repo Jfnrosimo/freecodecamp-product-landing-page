@@ -1,5 +1,4 @@
 * {
-    outline: 1px solid black;
     box-sizing: border-box;
 }
 body {
@@ -203,6 +202,8 @@ footer ul {
     }
     #video {
         height: 500px;
+        width: 50%;
+        margin-left: 25%;
     }
 } 
 
