@@ -1,27 +1,27 @@
 * {
+    outline: 1px solid black;
     box-sizing: border-box;
 }
 body {
     background: #e6ffe6;
     margin: 0;
     font-family: Garamond;
-    
-    
-  }
-  
+} 
 header {
     background-color: #006600;
     justify-content: space-between;
     color: white;
-}
-  
+} 
 #header-img {
     width: 90px;
     height: 90px;
     border-radius: 150px;
-    
+    margin-top: 5px;
+    margin-left: 2%;
 }
-  
+header h1 {
+    font-size: 1.7rem;
+}
 nav {
     max-width: 300px;
     height: 50px;
@@ -33,53 +33,42 @@ nav > ul > li {
     padding: 0.2rem;
     display: block;
     font-size: 1.2rem;
-}
-  
+}  
 nav > ul > li:hover {
     background-color: #004d00;
     border-radius: 0.2rem;
-}
-  
+} 
 li > a {
     color: inherit;
     text-decoration: 0;
-}
-  
+} 
 #banner {
-    text-align: center;
-  
-}
-  
+    text-align: center; 
+} 
 .banner-description {
     font-size: 2rem;
-}
-  
+}  
 .description {
     font-size: 2rem;
     display: block;
     font-weight: bold;
 }
-
 #features ul {
     margin-left: 0;
     padding-left: 0;
-}
-  
+}  
 section > ul > li {
     display: block;
 }
-
 #presentation {
     margin-bottom: 30px;
-}
-  
+} 
 .price {
     border: 2px solid green;
     padding: 16px;
     display: grid;
     grid-template-columns: 3fr;
-}
-  
+} 
 .headgear {
     width: 100%;
     height: auto;
@@ -88,28 +77,23 @@ section > ul > li {
     border-radius: 10px;
     margin: 0;
 }
-
 .price > .product-img {
     margin: auto;
     margin-top: 20px;
 }
-
 .price-value {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-}
-  
+}  
 footer {
     text-align: center;
     margin-top: 100px;
 }
-
 footer ul {
     margin-left: 0;
     padding-left: 0;
-}
-  
+}  
 .foot > ul > li {
     display: block;
     text-decoration: 0;
@@ -191,30 +175,34 @@ footer ul {
     .lg-0 {
         width: 0;
     }
+    .lg-centered {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    header {
+        height: 100px;
+    }
     header h1 {
         font-size: 3rem;
+        left: 20%;
     }
     nav {
         margin-top: 10px;
-        margin-left: 30px;
         display: inline-block;
         vertical-align: top;
         position: absolute;
-        right: -10%;
         top: 10;
+        left: 55%;
     }
     nav ul {
         margin-top: 10px;
+        padding-left: 0;
     }
     main #banner, main #features, main #presentation {
         margin-bottom: 70px;
     }
     #video {
         height: 500px;
-    }
-    .lg-centered {
-        margin-left: 15%;
-        margin-right: 15%;
     }
 } 
 
